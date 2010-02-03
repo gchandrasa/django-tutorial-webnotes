@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        <p>Are you sure want to delete {{ note.title }}?</p>
+        <p><input type="submit" value="Continue &rarr;" /> or <a href="{% url notes_list %}">Cancel</a></p>
+    </form>
+{% endblock %}

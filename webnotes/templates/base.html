@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Webnotes</title>        
+    </head>
+    <body>
+        <a href="{% url notes_list %}">Note List</a> | <a href="{% url notes_create %}">Add webnotes</a>
+        <div id="content">
+       {% block content %}
+       
+       {% endblock %} 
+       </div>
+    </body>
+</html>    
