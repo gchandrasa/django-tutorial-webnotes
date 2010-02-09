@@ -67,7 +67,7 @@ ROOT_URLCONF = 'webnotes.urls'
 
 
 import os
-PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates')
